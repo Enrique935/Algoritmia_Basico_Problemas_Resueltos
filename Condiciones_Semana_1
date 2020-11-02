@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float salario,cuota,exceso,isr;
+cout<<"Salario=";
+cin>>salario;
+
+if ((salario>=0.01)&&(salario<=969.5))
+{
+exceso=salario-0.01 ;
+isr=exceso*0.0192 ;
+cuota=0+isr;
+cout<<cuota<<endl;
+} else if ((salario>=969.51)&&(salario<=1703.80))
+{
+exceso=salario-969.51 ;
+isr=exceso*0.1088 ;
+cuota=56.91+isr ;
+cout<<cuota<<endl;
+} else if ((salario>=1703.81)&&(salario<=4782.61))
+{
+exceso=salario-1703.81 ;
+isr=exceso*0.16 ;
+cuota=136.85+isr;
+cout<<cuota<<endl;
+} else if ((salario>=4782.62)&&(salario<=14391.44))
+{
+exceso=salario-4782.62 ;
+isr=exceso*0.2352;
+cuota=766.15+isr;
+cout<<cuota<<endl;
+} else if ((salario>=14391.45)&&(salario<=19188.61))
+{
+exceso=salario-14391.45;
+isr=exceso*0.32;
+cuota=3470.25+isr;
+cout<<cuota<<endl;
+} else if ((salario>=19188.62)&&(salario<=57565.76))
+{
+exceso=salario-19188.62;
+isr=exceso*0.34;
+cuota=5005.35+isr;
+cout<<cuota<<endl;
+} else if (salario>=57565.77)
+{
+exceso=salario-57565.77;
+isr=exceso*0.35;
+cuota=18053.63+isr;
+cout<<cuota<<endl;
+}
+    return 0;
+}
