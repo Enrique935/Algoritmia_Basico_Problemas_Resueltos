@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int year,res_4,res_100,res_400;
+    cin>>year;
+    res_4=year%4;
+    res_100=year%100;
+    res_400=year%400;
+
+    if ((res_100==0)&&(res_400!=0)){
+        cout<<"NO BISIESTO";
+    } else if (res_4==0){
+    cout<<"BISIESTO";
+    } else {cout<<"NO BISIESTO";}
+
+
+    return 0;
+}
