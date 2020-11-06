@@ -4,21 +4,17 @@ using namespace std;
 
 int main()
 {
-int C1,C2,C3;
-double promedio;
-cout<<"C1=";
-cin>>C1;
-cout<<"C2=";
-cin>>C2;
-cout<<"C3=";
-cin>>C3;
-promedio=(C1+C2+C3)/3;
-if ((promedio>6)||(promedio==6))
-{
-cout<<1;
-} else if (promedio<6)
-{
-cout<<0;
-}
+    float c1,c2,c3;
+    float promedio;
+
+    cin>>c1>>c2>>c3;
+
+    promedio=(c1+c2+c3)/3;
+
+    if (promedio>=6){
+        cout<<"1";
+    } else {
+        cout<<"0";
+    }
     return 0;
 }
