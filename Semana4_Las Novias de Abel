@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    n-=1;
+    int i,horarios[n] ;
+    for(i=0;i<=n;i++){
+        cin>>horarios[i];
+    }
+    int j,k,coll=0;
+    for(j=0,k=1;j<=(n-1) && k<=n;j++,k++){
+        if((horarios[j])==(horarios[k])){
+            coll+=1 ;
+        } else {
+            coll+=0;
+        }
+    }
+    if(coll!=0){
+        cout<<"LO SIENTO ABEL... DAVID SE QUEDA CON TODAS" ;
+    } else {
+        cout<<"ABEL ERES UN GRANDE" ;
+    }
+
+
+    return 0;
+}
