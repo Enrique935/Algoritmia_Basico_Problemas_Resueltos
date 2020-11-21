@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        //PROBLEMA SEMANAL - SEMANA 5 - SOLDIER AND BANANAS
+    int k,n,w;
+    cin>>k>>n>>w;
+    int i,coll=0,prest;
+    for(i=1;i<=w;i++){
+        coll+=i*k;
+    }
+    prest=coll-n;
+    cout<<prest;
+    return 0;
+}
