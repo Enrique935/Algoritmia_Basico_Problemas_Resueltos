@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        //PROBLEMA SEMANAL - SEMANA 5 - BARBULLA MATEMATICA
+    int i,n,coll=0,propi;
+    cin>>n;
+    for(i=1;i<=n;i++){
+        propi=(i*(i+1))/2;
+        coll+=propi;
+    }
+    cout<<coll;
+    return 0;
+}
